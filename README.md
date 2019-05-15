@@ -4,6 +4,8 @@ Terraform configuration to setup AWS EC2 instance and a disk to be used in the P
 # Usage
 Make appropriate changes to the `vars.tf` file to replace with the values suitable for your environment such as key file name, aws region, hostname prefix, route53 domain name etc.  If using personal domain then remove route53 related config in the `main.tf` file.
 
+Set environment variables AWS_SECRET_ACCESS_KEY and AWS_ACCESS_KEY_ID with the appropriate values to access the AWS environment.
+
 ```
 $ git clone https://github.com/sharabinth/ptfe-aws-mounted-disk-mode.git
 $ cd ptfe-aws-mounted-disk-mode
